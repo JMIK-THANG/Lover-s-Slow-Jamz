@@ -11,16 +11,49 @@
     <meta name="keywords" content="Lover's Slow Jamz" />
     <title>Lover's Slow Jamz</title>
   </head>
-  <body>
+  <body class="page">
     <!-- Standly -->
     <header class="header"></header>
     <main>
       <!-- Anthony-->
       <section class="restaurantRecommentdation"></section>
       <!-- Jmik -->
-      <section class="placeToVisit">My section</section>
+      <section class="placeToVisit">
+        <div class="section__container">
+          <h1 class="placeToVisit__title">
+            <span class="placeToVisit__span">Places to Visit</span> on
+            Valentine's Day in Charleston
+          </h1>
+          <div class="heart-container">
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+          </div>
+
+          <template id="card__template">
+            <li class="card">
+              <div class="card__content">
+                <h2 class="card__title"></h2>
+                <p class="card__subtitle"></p>
+                <!-- <p class="card__description"></p> -->
+                <button type="button" class="card__button">More</button>
+              </div>
+              <div class="card__container">
+                <img src="" alt="" class="card__image" />
+              </div>
+            </li>
+          </template>
+
+          <ul class="card__list"></ul>
+        </div>
+      </section>
       <!-- JJ -->
       <footer class="footer"></footer>
     </main>
+
+    <script src="scripts/index.js"></script>
   </body>
 </html>
