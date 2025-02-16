@@ -17,7 +17,7 @@ const gallery = [
     title: "Battery",
     subtitle:
       "The Battery is a beautiful and historic area of Charleston that's perfect for a romantic walk. Take in the sights and sounds of the harbor, and enjoy the stunning views of the city and the sea.",
-    link: "https://images.pexels.com/photos/4887831/pexels-photo-4887831.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
+    link: "https://charleston.com/images/2023/valentines-day-charleston-harbor-sunset-cruise.jpg",
   },
   {
     title: "Folly Beach",
