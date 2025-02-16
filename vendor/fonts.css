@@ -1,0 +1,8 @@
+@font-face {
+  font-weight: 400;
+  font-family: "Anton";
+  font-style: normal;
+  font-display: swap;
+  src:url("../vendor/fonts/Anton-Regular.ttf") format("truetype");
+}
+
