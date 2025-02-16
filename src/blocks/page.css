@@ -2,4 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3, #ffb199);
+    background-attachment: fixed;
+    color: white; 
 }
+
