@@ -3,22 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Anthony, Standly, Jmik, JJ" />
+    <meta name="author" content="Anthony, Stanley, Jmik, JJ" />
     <meta
       name="description"
       content="Website for setting up the perfect date."
     />
     <meta name="keywords" content="Lover's Slow Jamz" />
+    <link rel="stylesheet" href="vendor/normalize.css" />
+    <link rel="stylesheet" href="pages/index.css" />
+    <link rel="stylesheet" href="vendor/fonts.css" />
     <title>Lover's Slow Jamz</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" />
   </head>
   <body class="page">
-    <!-- Standly -->
-    <header class="header"></header>
+    <!-- Stanley -->
+    <header class="header">
+      <h1 class="header__title">Lover's Slow Jamz</h1>
+      <nav class="nav">
+        <ul class="nav__links">
+          <li>
+            <a href="#restaurant-recommendation" class="nav__link"
+              >Restaurants</a
+            >
+          </li>
+          <li>
+            <a href="#places-to-visit" class="nav__link">PlaceToVisit</a>
+          </li>
+          <li>
+            <a href="#footer" class="nav__link">Credits</a>
+          </li>
+        </ul>
+      </nav>
+      <iframe
+        class="header__iframe"
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/playlist/6Kv8Q20RdkRggcDyoK5msw?utm_source=generator"
+        width="70%"
+        height="352"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      >
+      </iframe>
+    </header>
     <main>
       <!-- Anthony-->
-      <section class="restaurantRecommentdation"></section>
+      <section
+        class="restaurantRecommentdation"
+        id="restaurant-recommendation"
+      ></section>
       <!-- Jmik -->
-      <section class="placeToVisit">
+      <section class="placeToVisit" id="places-to-visit">
         <div class="section__container">
           <h1 class="placeToVisit__title">
             <span class="placeToVisit__span">Places to Visit</span> on
@@ -51,7 +87,7 @@
         </div>
       </section>
       <!-- JJ -->
-      <footer class="footer"></footer>
+      <footer class="footer" id="footer"></footer>
     </main>
 
     <script src="scripts/index.js"></script>
