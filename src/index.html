@@ -62,8 +62,58 @@
         <div class="section__container">
           <h1 class="placeToVisit__title">
             <span class="placeToVisit__span">Places to Visit</span> on
+      <section class="restaurants">
+        <div>
+          <p class="restaurants_tagline">Restaurant</p>
+          <h2 class="restaurants_header">Discover Romantic Dining</h2>
+          <p class="restaurants_summary">
+            Lover's Code Jamz connects you to the top 100 restaurants in the US.
+            Bring your romantic date night to the next level with the perfect
+            abmiance and food.
+          </p>
+          <div class="restaurants_info">
+            <div>
+              <h3 class="restaurants_header restaurants_header__type_small">
+                Close & Quick
+              </h3>
+              <p class="restaurants_summary restaurants_summary__type_small">
+                Restrants sorted by distnace from you for quick and easy
+                traveling.
+              </p>
+            </div>
+            <div>
+              <h3 class="restaurants_header restaurants_header__type_small">
+                Close & Quick
+              </h3>
+              <p class="restaurants_summary restaurants_summary__type_small">
+                Restrants sorted by distnace from you for quick and easy
+                traveling.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="restaurant-card">
+          <h3 class="restaurant-card_name"></h3>
+          <img src="" alt="" class="restaurant-card_img" />
+          <div class="restaurant-card_buttons">
+            <button class="restaurant-card_button">Visit</button>
+            <button class="restaurant-card_button">Website</button>
+          </div>
+        </div>
+      </section>
+      <!-- Jmik -->
+      <section class="place-to-visit">
+        <div class="place-to-visit__container">
+          <h1 class="place-to-visit__title">
+            <span class="place-to-visit__span">Places to Visit</span> on
             Valentine's Day in Charleston
           </h1>
+          <p class="place-top-visit__description"></p>
+          <p class="place-to-visit__display-type">display Type:
+            <button type="button" class="place-to-visit__btn-type-horizontal">column</button>
+            <button type="button" class="place-to-visit__btn-type-verticle">grid</button>
+          </p>
+           
           <div class="heart-container">
             <div class="heart"></div>
             <div class="heart"></div>
@@ -72,27 +122,53 @@
             <div class="heart"></div>
             <div class="heart"></div>
           </div>
-
-          <template id="card__template">
+          <!-- Horizontal -->
+          <template id="card-template-horizontal">
             <li class="card">
               <div class="card__content">
                 <h2 class="card__title"></h2>
-                <p class="card__subtitle"></p>
-                <!-- <p class="card__description"></p> -->
+                <p class="card__description"></p>
                 <button type="button" class="card__button">More</button>
               </div>
-              <div class="card__container">
                 <img src="" alt="" class="card__image" />
+            </li>
+          </template>
+          <!--Verticle card element  -->
+          <template id="card-template-verticle">
+            <li class="card-verticle">
+              <div class="card-verticle__content">
+                <img src="" alt="" class="card__image" />
+                <h2 class="card__verticle-title"></h2>
+                <p class="card__verticle-description"></p>
+                <button type="button" class="card__button">More</button>
               </div>
             </li>
           </template>
           <ul class="card__list"></ul>
         </div>
+        <!-- Preview image modal -->
+        <div class="popup popup__preview-image">
+          <div class="popup__content">
+            <button type="button" class="popup__close">Close</button>
+            <img src="" alt="" class="popup__image">
+            <p class="popup__caption"></p>
+          </div>
+        </div>
+        <!-- More images and more info-->
+        <div class="popup popup__images-info">
+          <div class="popup__content">
+            <button type="button" class="popup__close">Close</button>
+            <p class="popup__info">
+              <button type="button" class="popup__images">More Images</button>
+              <button type="button" class="popup__info">More Info</button>
+            </p>
+          </div>
+        </div>
       </section>
       <!-- JJ -->
       <footer class="footer" id="footer"></footer>
     </main>
-
-    <script src="scripts/index.js"></script>
+    <!-- JJ -->
+    <footer class="footer"></footer>
   </body>
 </html>

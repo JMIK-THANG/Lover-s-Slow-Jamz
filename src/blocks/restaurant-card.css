@@ -1,0 +1,26 @@
+.restaurant-card {
+  width: 640px;
+}
+
+.restaurant-card_name {
+}
+
+.restaurant-card_img {
+}
+
+.restaurant-card_buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.restaurant-card_button {
+  font-family: Roboto, Arial, "Helvetica Neue", Lato;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  background: white;
+  border: 1px solid black;
+  padding: 12px 24px;
+  width: 120px;
+}

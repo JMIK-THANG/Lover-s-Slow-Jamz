@@ -1,7 +1,10 @@
 {
   "name": "lovers-slow-jamz",
   "version": "1.0.0",
-  "description": "https://github.com/JMIK-THANG/Lover-s-Slow-Jamz",
+  "description": "Website for setting up the perfect date.",
+  "keywords": [
+    "Lover's Slow Jamz"
+  ],
   "main": "index.js",
   "scripts": {
     "predeploy": "npm run build",
