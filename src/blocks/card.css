@@ -1,0 +1,75 @@
+.card__list {
+  margin: 0;
+  padding: 0;
+}
+.card__image {
+  width: 500px;
+  max-width: 500px;
+  height: 220px;
+  object-fit: cover;
+  cursor: pointer;
+  margin-bottom: 10px;
+  flex: 1;
+  margin: 0;
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+  margin: 0;
+  list-style: none;
+  padding:10px; 
+}
+
+.card__content {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding: 10px 0px 10px 10px;
+}
+
+.card__title {
+  margin: 0;
+}
+
+.card__description {
+  font-size: 16px;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.card__happy-valentine {
+  margin-top: 20px;
+  }
+
+.card__button:hover {
+}
+
+@media screen and (max-width: 820px) {
+  .card__image {
+    max-width: 228px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .card {
+    flex-direction: column;
+    padding: 0 0 20px;
+  }
+  .card__image {
+    max-width: 500px;
+    width: 100%;
+    
+  }
+  
+
+}
