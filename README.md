@@ -1,4 +1,4 @@
-##Lover's Slow Jamz##
+## Lover's Slow Jamz
 
 A web application designed to help users set up the perfect date night with romantic playlists, restaurant recommendations, and places to visit.
 
