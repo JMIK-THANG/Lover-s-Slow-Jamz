@@ -11,9 +11,9 @@
     opacity: 0;
   }
 }
-.section-container {
+.place-to-visit-container {
   background: #f6bbcf;
-  display: flex;
+  /* display: flex; */
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -26,8 +26,7 @@
   padding: 0;
 }
 
-/* Adding a semi-transparent flower background */
-/* .section-container::before {
+/* .place-to-visit__container::before {
   content: "";
   position: absolute;
   top: 0;
@@ -38,21 +37,80 @@
   opacity: 0.1;
   z-index: 0;
 } */
-.placeToVisit__title {
+.place-to-visit__title {
   text-align: center;
   padding: 20px 0;
   margin: 0;
-  font-size:35px; 
-  font-weight:600; 
+  font-size: 35px;
+  font-weight: 600;
   padding: 30px 0;
-
 }
-.placeToVisit__span {
+.place-to-visit__span {
   display: block;
   margin: 0;
- 
 }
-/* Floating Hearts Animation */
+.place-to-visit__display-type{ 
+      margin-left:5%; 
+}
+.card__image {
+  width: 500px;
+  max-width: 500px;
+  height: 220px;
+  object-fit: cover;
+  cursor: pointer;
+  margin-bottom: 10px;
+  flex: 1;
+  border-radius: 20px;
+  margin: 0;
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+  margin: 0;
+  list-style: none;
+  padding:0 20px; 
+}
+
+.card__content {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding: 10px 0px 10px 10px;
+}
+
+.card__title {
+  margin: 0;
+}
+
+.card__subtitle {
+  font-size: 16px;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.card__button {
+  background: transparent;
+  border: none;
+  margin-top: 20px;
+  border: 1px solid #ff4d6d;
+  border-radius: 10px;
+  padding: 10px 13px;
+  background: #ff4d6d;
+}
+
+.card__button:hover {
+}
+
 .heart {
   position: absolute;
   bottom: -25px;
@@ -89,62 +147,6 @@
   animation-duration: 6.5s;
 }
 
-.card__image {
-  width: 500px;
-  max-width: 500px;
-  height: 220px;
-  object-fit: cover;
-  cursor: pointer;
-  margin-bottom: 10px;
-  flex: 1;
-  border-radius: 20px;
-  margin: 0;
-}
-.card {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-evenly;
-  margin: 0;
-  /* padding: 0 20px; */
-}
-
-.card__content {
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  flex: 1;
-  max-width: 500px;
-  width: 100%;
-  border: 1px solid black;
-  margin-bottom: 20px;
-  border-radius: 20px;
-  padding:10px 0px 10px 10px;
-}
-
-.card__title {
-  margin: 0;
-}
-
-.card__subtitle {
-  font-size: 16px;
-  margin: 0;
-  padding-top: 20px;
-}
-
-.card__button {
-  padding-top: 20px;
-  background: transparent;
-  border: none;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
-    rgba(0, 0, 0, 0.05) 0px 5px 10px;
-}
-
-.card__button:hover {
-}
-
 @media screen and (max-width: 820px) {
   .card__image {
     max-width: 228px;
@@ -159,10 +161,10 @@
     max-width: 500px;
     width: 100%;
   }
-  .placeToVisit__title{ 
-      font-size:25px; 
+  .placeToVisit__title {
+    font-size: 25px;
   }
-  .section-container{ 
-      padding:20px 20px; 
+  .section-container {
+    padding: 20px 20px;
   }
 }
