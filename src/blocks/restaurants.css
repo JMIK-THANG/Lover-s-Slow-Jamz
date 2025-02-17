@@ -120,3 +120,37 @@
 .restaurants_arrow__type_right:hover {
   right: 3%;
 }
+
+@media screen and (max-width: 1024px) {
+  .restaurants_reel {
+    min-width: 400px;
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .restaurants {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .restaurants_arrow {
+    width: 48px;
+  }
+
+  .restaurants_arrow:hover {
+    width: 52px;
+  }
+
+  .restaurants_arrow:active {
+    width: 48px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .restaurants_reel {
+    min-width: 260px;
+    max-width: 260px;
+  }
+}
