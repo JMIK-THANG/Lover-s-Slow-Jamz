@@ -1,9 +1,9 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
+@import url(../blocks/page.css);
 @import url(../blocks/header.css);
 @import url(../blocks/nav.css);
 @import url(../blocks/place-to-visit.css);
-@import url(../blocks/page.css);
 @import url(../blocks/restaurants.css);
 @import url(../blocks/restaurant-card.css);
 @import url(../blocks/modal.css);

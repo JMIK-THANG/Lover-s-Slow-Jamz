@@ -81,13 +81,20 @@
             </div>
           </div>
         </div>
-        <div class="restaurant-card">
-          <h3 class="restaurant-card_name"></h3>
-          <img src="" alt="" class="restaurant-card_img" />
-          <div class="restaurant-card_buttons">
-            <button class="restaurant-card_button">Visit</button>
-            <button class="restaurant-card_button">Website</button>
-          </div>
+        <div class="restaurants_reel-container">
+          <img
+            src="./images/Arrow.svg"
+            alt="arrow"
+            class="restaurants_arrow restaurants_arrow__type_left"
+            id="left-arrow"
+          />
+          <img
+            src="./images/Arrow.svg"
+            alt="arrow"
+            class="restaurants_arrow restaurants_arrow__type_right"
+            id="right-arrow"
+          />
+          <div class="restaurants_reel" id="restaurants-reel"></div>
         </div>
       </section>
       <section class="place-to-visit" id="places-to-visit">
@@ -204,4 +211,18 @@
         </div>
       </footer>
   </body>
+  <template id="restaurant-card">
+    <div class="restaurant-card">
+      <img src="" alt="" class="restaurant-card_img" />
+      <h3 class="restaurant-card_name"></h3>
+      <div class="restaurant-card_buttons">
+        <a href="" id="visit-link">
+          <button type="button" class="restaurant-card_button">Visit</button>
+        </a>
+        <a href="" id="website-link">
+          <button type="button" class="restaurant-card_button">Website</button>
+        </a>
+      </div>
+    </div>
+  </template>
 </html>

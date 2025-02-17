@@ -2,13 +2,83 @@ import "../pages/index.css";
 import getSortedArrayByGeoDistance from "../utils/getSortedArrayByGeoDistance.js";
 import restaurantsData from "../utils/restaurants.json";
 import galleryData from "../utils/gallery.json";
+import {
+  restrauntCardSelector,
+  restrauntsReelSelector,
+  restaurantCardNameSelector,
+  restaurantCardImageSelector,
+  restaurantsLeftArrowSelector,
+  restaurantsRightArrowSelector,
+} from "../utils/constants.js";
+
+const restaurantCardTemplate = document.querySelector(restrauntCardSelector);
+const restaurantsReel = document.querySelector(restrauntsReelSelector);
+
+const restrauntLeftArrow = document.querySelector(restaurantsLeftArrowSelector);
+const restrauntRightArrow = document.querySelector(
+  restaurantsRightArrowSelector
+);
+
+function renderRestaurantCard(cardData, container) {
+  const cardElement =
+    restaurantCardTemplate.content.firstElementChild.cloneNode(true);
+
+  const cardName = cardElement.querySelector(restaurantCardNameSelector);
+  cardName.textContent = cardData.name;
+
+  const cardImage = cardElement.querySelector(restaurantCardImageSelector);
+  cardImage.alt = cardData.name;
+  cardImage.src = cardData.imageURL;
+
+  container.append(cardElement);
+
+  return cardElement;
+}
+
+function viewRestaurantCard(element) {
+  console.log(element);
+  element.scrollIntoView({
+    behavior: "smooth",
+    block: "center",
+    inline: "center",
+  });
+}
 
 navigator.geolocation.getCurrentPosition((position) => {
   const restaurants = getSortedArrayByGeoDistance(
     restaurantsData.restaurants,
     position.coords
   );
-  console.log(restaurants);
+
+  let restrauntCards = [];
+
+  restrauntCards = restaurants.map((restaurant) => {
+    return renderRestaurantCard(restaurant, restaurantsReel);
+  });
+
+  console.log(restrauntCards);
+
+  let currentRestaurantIndex = 0;
+
+  restrauntLeftArrow.addEventListener("mousedown", () => {
+    currentRestaurantIndex--;
+    currentRestaurantIndex = Math.max(currentRestaurantIndex, 0);
+    const element = restrauntCards[currentRestaurantIndex];
+    viewRestaurantCard(element);
+  });
+
+  restrauntRightArrow.addEventListener("mousedown", () => {
+    currentRestaurantIndex++;
+    currentRestaurantIndex = Math.min(
+      currentRestaurantIndex,
+      restrauntCards.length
+    );
+    const element = restrauntCards[currentRestaurantIndex];
+    viewRestaurantCard(element);
+  });
+
+  const element = restrauntCards[currentRestaurantIndex];
+  viewRestaurantCard(element);
 });
 
 const cardList = document.querySelector(".card__list");
@@ -61,10 +131,10 @@ const horizontalCardElement = (data) => {
   const cardImage = cardElement.querySelector(".card__image");
   cardImage.src = data.link;
   cardImage.alt = data.title;
-  
+
   const cardTitle = cardElement.querySelector(".card__title");
   cardTitle.textContent = data.title;
-  
+
   const cardDescription = cardElement.querySelector(".card__description");
   cardDescription.textContent = data.description;
   cardImage.addEventListener("click", () => {
