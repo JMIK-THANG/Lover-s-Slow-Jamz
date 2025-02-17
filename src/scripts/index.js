@@ -8,7 +8,7 @@ navigator.geolocation.getCurrentPosition((position) => {
     restaurantsData.restaurants,
     position.coords
   );
-  console.log(restaurants); 
+  console.log(restaurants);
 });
 
 const cardList = document.querySelector(".card__list");
@@ -30,6 +30,7 @@ const renderCard = (cardData, cardContainer) => {
   console.log(cardData);
   cardContainer.innerHTML = "";
   cardData.forEach((cardObj) => {
+    console.log(cardObj);
     let cardElement;
     if (currentLayout === "horizontal") {
       cardElement = horizontalCardElement(cardObj);
@@ -57,20 +58,20 @@ function handleEscape(e) {
   }
 }
 
+
+
 const horizontalCardElement = (data) => {
   console.log("Creating horizontal card:", data); // Log card data
-
   const cardElement = cardTemplate.cloneNode(true);
   const cardImage = cardElement.querySelector(".card__image");
   cardImage.src = data.link;
   cardImage.alt = data.title;
-
+  
   const cardTitle = cardElement.querySelector(".card__title");
   cardTitle.textContent = data.title;
-
+  
   const cardDescription = cardElement.querySelector(".card__description");
   cardDescription.textContent = data.description;
-
   cardImage.addEventListener("click", () => {
     handlePreviewImage(data);
   });

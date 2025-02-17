@@ -11,8 +11,10 @@
     opacity: 0;
   }
 }
-.place-to-visit__container {
+.place-to-visit {
   background: #f6bbcf;
+}
+.place-to-visit__container {
   overflow: hidden;
   position: relative;
   padding: 40px 20px;
@@ -45,19 +47,27 @@
   display: block;
   margin: 0;
 }
-.place-to-visit__display-type{ 
-      margin-left:10%; 
+.place-to-visit__display-type {
+  margin-left: 10%;
+}
+.place-to-visit__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 150px;
 }
 .card__image {
   width: 500px;
   max-width: 500px;
-  height: 220px;
+  height: 350px;
   object-fit: cover;
   cursor: pointer;
   margin-bottom: 10px;
   flex: 1;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   margin: 0;
+  /* padding:10px;  */
 }
 .card {
   display: flex;
@@ -66,7 +76,7 @@
   justify-content: space-evenly;
   margin: 0;
   list-style: none;
-  padding:0 20px; 
+  /* padding: 0 20px; */
 }
 
 .card__content {
@@ -152,15 +162,22 @@
 @media screen and (max-width: 650px) {
   .card {
     flex-direction: column;
+    /* padding: 0 0 20px; */
   }
   .card__image {
     max-width: 500px;
     width: 100%;
   }
-  .placeToVisit__title {
-    font-size: 25px;
+  .place-tovisit-__title {
+    font-size: 20px;
   }
-  .section-container {
+  .place-to-visit__container {
     padding: 20px 20px;
+  }
+}
+@media screen and (max-width: 500px) { 
+  .place-to-visit__title{ 
+    font-size:20px;
+    color:red; 
   }
 }

@@ -1,8 +1,8 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
-@import url(../blocks/placeToVisit.css);
+@import url(../blocks/place-to-visit.css);
 @import url(../blocks/page.css);
 @import url(../blocks/restaurants.css);
 @import url(../blocks/restaurant-card.css);
 @import url(../blocks/modal.css); 
-@import url(../blocks/vertilceCard.css)
+@import url(../blocks/verticle.css); 
