@@ -1,9 +1,12 @@
 .restaurants {
   display: flex;
   gap: 80px;
+  align-items: center;
 
   padding: 112px 64px;
   box-sizing: border-box;
+
+  justify-content: space-between;
 }
 
 .restaurants_tagline {
@@ -54,4 +57,66 @@
 .restaurants_info {
   display: flex;
   gap: 48px;
+}
+
+.restaurants_reel-container {
+  position: relative;
+}
+
+.restaurants_reel {
+  min-width: 600px;
+  max-width: 600px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.restaurants_reel::-webkit-scrollbar {
+  display: none;
+}
+
+.restaurants_arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+
+  width: 64px;
+  aspect-ratio: 1;
+
+  filter: drop-shadow(0 0 5px black);
+  cursor: pointer;
+  transition: width 0.05s;
+}
+
+.restaurants_arrow:hover {
+  width: 70px;
+}
+
+.restaurants_arrow:active {
+  width: 64px;
+}
+
+.restaurants_arrow__type_left {
+  left: 5%;
+  transform: translate(0, -50%);
+  transition: left 0.05s, width 0.05s;
+}
+
+.restaurants_arrow__type_left:hover {
+  left: 3%;
+}
+
+.restaurants_arrow__type_right {
+  right: 5%;
+  transform: translate(0, -50%) rotate(180deg);
+  transition: right 0.05s, width 0.05s;
+}
+
+.restaurants_arrow__type_right:hover {
+  right: 3%;
 }

@@ -53,17 +53,7 @@
     </header>
     <main>
       <!-- Anthony-->
-      <section
-        class="restaurantRecommentdation"
-        id="restaurant-recommendation"
-      ></section>
-      <!-- Jmik -->
-      <section class="placeToVisit" id="places-to-visit">
-        <div class="section__container">
-          <h1 class="placeToVisit__title">
-            <span class="placeToVisit__span">Places to Visit</span> on
       <section class="restaurants">
-      <!-- <section class="restaurants">
         <div>
           <p class="restaurants_tagline">Restaurant</p>
           <h2 class="restaurants_header">Discover Romantic Dining</h2>
@@ -93,15 +83,22 @@
             </div>
           </div>
         </div>
-        <div class="restaurant-card">
-          <h3 class="restaurant-card_name"></h3>
-          <img src="" alt="" class="restaurant-card_img" />
-          <div class="restaurant-card_buttons">
-            <button class="restaurant-card_button">Visit</button>
-            <button class="restaurant-card_button">Website</button>
-          </div>
+        <div class="restaurants_reel-container">
+          <img
+            src="./images/Arrow.svg"
+            alt="arrow"
+            class="restaurants_arrow restaurants_arrow__type_left"
+            id="left-arrow"
+          />
+          <img
+            src="./images/Arrow.svg"
+            alt="arrow"
+            class="restaurants_arrow restaurants_arrow__type_right"
+            id="right-arrow"
+          />
+          <div class="restaurants_reel" id="restaurants-reel"></div>
         </div>
-      </section> -->
+      </section>
       <!-- Jmik -->
       <section class="place-to-visit">
         <div class="place-to-visit__container">
@@ -178,9 +175,14 @@
             and Nature
           </h2>
           <p class="place-to-visit__footer-descriptio">
-            Folly Beach offers a romantic seaside escape with stunning sunsets and peaceful ocean waves, perfect for a Valentine’s Day stroll. Charleston’s Waterfront Park enchants couples with its iconic Pineapple Fountain, charming swings, and breathtaking harbor views. The majestic Angel Oak Tree adds a fairy-tale touch, creating a magical and unforgettable setting for love and connection.
+            Folly Beach offers a romantic seaside escape with stunning sunsets
+            and peaceful ocean waves, perfect for a Valentine’s Day stroll.
+            Charleston’s Waterfront Park enchants couples with its iconic
+            Pineapple Fountain, charming swings, and breathtaking harbor views.
+            The majestic Angel Oak Tree adds a fairy-tale touch, creating a
+            magical and unforgettable setting for love and connection.
           </p>
-                  </div>
+        </div>
       </section>
       <!-- JJ -->
       <footer class="footer" id="footer"></footer>
@@ -188,4 +190,18 @@
     <!-- JJ -->
     <footer class="footer"></footer>
   </body>
+  <template id="restaurant-card">
+    <div class="restaurant-card">
+      <img src="" alt="" class="restaurant-card_img" />
+      <h3 class="restaurant-card_name"></h3>
+      <div class="restaurant-card_buttons">
+        <a href="" id="visit-link">
+          <button type="button" class="restaurant-card_button">Visit</button>
+        </a>
+        <a href="" id="website-link">
+          <button type="button" class="restaurant-card_button">Website</button>
+        </a>
+      </div>
+    </div>
+  </template>
 </html>
