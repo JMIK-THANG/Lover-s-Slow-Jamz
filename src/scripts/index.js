@@ -27,10 +27,8 @@ const closeButton = document.querySelector(".popup__close");
 let currentLayout = "horizontal";
 
 const renderCard = (cardData, cardContainer) => {
-  console.log(cardData);
   cardContainer.innerHTML = "";
   cardData.forEach((cardObj) => {
-    console.log(cardObj);
     let cardElement;
     if (currentLayout === "horizontal") {
       cardElement = horizontalCardElement(cardObj);
@@ -58,10 +56,7 @@ function handleEscape(e) {
   }
 }
 
-
-
 const horizontalCardElement = (data) => {
-  console.log("Creating horizontal card:", data); // Log card data
   const cardElement = cardTemplate.cloneNode(true);
   const cardImage = cardElement.querySelector(".card__image");
   cardImage.src = data.link;

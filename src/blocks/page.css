@@ -3,5 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   min-width:320px; 
+  background:linear-gradient(135deg, #ff758c, #ff7eb3, #fb199f); 
+  color: white; 
 }
 
