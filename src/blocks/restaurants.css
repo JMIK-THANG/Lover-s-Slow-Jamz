@@ -1,0 +1,57 @@
+.restaurants {
+  display: flex;
+  gap: 80px;
+
+  padding: 112px 64px;
+  box-sizing: border-box;
+}
+
+.restaurants_tagline {
+  font-family: Roboto, Arial, "Helvetica Neue", Lato;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+
+  margin: 0 0 16px;
+}
+
+.restaurants_header {
+  font-family: Roboto, Arial, "Helvetica Neue", Lato;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.2;
+
+  margin: 0 0 24px;
+}
+
+.restaurants_header__type_small {
+  font-family: Roboto, Arial, "Helvetica Neue", Lato;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.3;
+
+  margin: 0 0 24px;
+}
+
+.restaurants_summary {
+  font-family: Roboto, Arial, "Helvetica Neue", Lato;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+
+  margin: 0 0 32px;
+}
+
+.restaurants_summary__type_small {
+  font-family: Roboto, Arial, "Helvetica Neue", Lato;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  margin: 0;
+}
+
+.restaurants_info {
+  display: flex;
+  gap: 48px;
+}
