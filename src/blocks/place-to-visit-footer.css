@@ -1,0 +1,20 @@
+.place-to-visit__footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 150px;
+    }
+    @media screen and (max-width: 650x) { 
+      .place-to-visit__footer-description{ 
+            padding:0 10px; ; 
+      }
+    }
+    @media screen and (max-width:1100px){ 
+      .place-to-visit__footer{ 
+            padding:0 10px; 
+      }
+      .place-to-visit__footer-title{ 
+            font-size:20px; 
+      }
+    }
