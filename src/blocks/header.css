@@ -20,9 +20,9 @@
   font-style: normal;
   position: relative;
   font-weight: 400;
-  max-width: 20%;
-  left: 6%;
-  top: 4%;
+  max-width: 30%;
+  left: 5%;
+  top: 10%;
 }
 
 .header__iframe-container {
@@ -37,7 +37,6 @@
 .header__iframe {
   display: flex;
   width: 100%;
-  height: auto;
   aspect-ratio: 16 / 9;
   max-width: 700px;
   border-radius: 12px;
@@ -66,4 +65,62 @@
     opacity: 1;
     transform: scale(1);
   }
+}
+
+@media screen and (max-width:725px) {
+    .header__description {
+max-width: 50%;
+left:-2%;
+padding-top: 10px;
+    }
+
+    .header__title {
+        font-size: 20px;
+        left: 1px;
+    }
+    
+}
+
+@media screen and (max-width:507px) {
+
+.header {
+    padding-right: 50px ;
+    padding-left: 50px ;
+}
+.header__title {
+    text-align: center;
+    padding-left: 50px;
+    margin: 0;
+    padding-bottom: 20px;
+
+}
+.header__description {
+    text-align: center;
+    left: auto;
+    margin: 0;
+padding-left: 100px;
+padding-bottom: 20px;
+}
+
+}
+
+@media screen and (max-width:442px) {
+
+    .header__title {
+        padding-left: 10px;
+    }
+
+    .header__description {
+        padding-left: 40px;
+        max-width: 70%;
+    }
+
+}
+
+@media screen and (max-width:345px) {
+
+    .header {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
 }
