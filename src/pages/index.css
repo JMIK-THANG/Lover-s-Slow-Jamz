@@ -1,0 +1,7 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+@import url(../blocks/header.css);
+@import url(../blocks/nav.css);
+@import url(../blocks/placeToVisit.css); 
+@import url(../blocks/page.css);
+ /* add block like this: @import url(../blocks/page.css); */

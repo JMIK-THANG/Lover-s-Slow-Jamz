@@ -1,0 +1,16 @@
+@font-face {
+    font-weight: 400;
+    font-family: "Anton";
+    font-style: normal;
+    font-display: swap;
+    src:url("../vendor/Anton-Regular.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-weight: 400;
+    font-family: "Cookie";
+    font-style: normal;
+    font-display: swap;
+    src:url("../vendor/Cookie-Regular.ttf") format("truetype");
+  }
+  

@@ -1,0 +1,139 @@
+.placeToVisit {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  display: flex;
+  flex-wrap:wrap; 
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Adding a semi-transparent flower background */
+/* .placeToVisit::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://images.pexels.com/photos/268261/pexels-photo-268261.jpeg?auto=compress&cs=tinysrgb&w=800"); 
+  opacity: 0.1; 
+  z-index: 0;
+} */
+.placeToVisit__title {
+  text-align: center;
+  padding:20px 0; 
+  margin:0; 
+}
+.placeToVisit__span { 
+      display:block ;
+      margin:0; 
+}
+/* Floating Hearts Animation */
+.heart {
+  position: absolute;
+  bottom: -25px;
+  width: 25px;
+  height: 25px;
+  background-color: #ff4d6d;
+  animation: floatUp 5s linear infinite;
+  opacity: 0.9;
+  clip-path: polygon(50% 0%, 100% 35%, 75% 100%, 50% 80%, 25% 100%, 0% 35%);
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(0.8);
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-1000px) scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* Generate multiple hearts dynamically */
+.heart:nth-child(1) {
+  left: 10%;
+  animation-duration: 4s;
+}
+.heart:nth-child(2) {
+  left: 20%;
+  animation-duration: 5s;
+}
+.heart:nth-child(3) {
+  left: 40%;
+  animation-duration: 6s;
+}
+.heart:nth-child(4) {
+  left: 55%;
+  animation-duration: 4.5s;
+}
+.heart:nth-child(5) {
+  left: 70%;
+  animation-duration: 5.5s;
+}
+.heart:nth-child(6) {
+  left: 75%;
+  animation-duration: 6.5s;
+}
+
+.card__image {
+  width: 500px;
+  max-width:500px; 
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+  margin-bottom:10px; 
+  flex:1; 
+  border-radius:20px; 
+  margin:0; 
+
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px; 
+  justify-content: space-evenly;
+  margin:0; 
+ 
+}
+
+.card__content {
+      height:200px; 
+      display:flex; 
+      flex-direction:column; 
+      justify-content: center;
+      align-items: flex-start;
+  flex:1; 
+  width:500px; 
+  max-width: 500px; 
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  border-radius: 20px; 
+}
+
+.card__title {
+      margin:0; 
+}
+
+.card__subtitle {
+  font-size: 16px;
+  margin:0; 
+  padding-top:20px; 
+}
+
+.card__button {
+      padding-top:20px; 
+      background:transparent; 
+      border:none; 
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.card__button:hover {
+}
