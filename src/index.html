@@ -18,12 +18,18 @@
       <!-- Anthony-->
       <section class="restaurantRecommentdation"></section>
       <!-- Jmik -->
-      <section class="placeToVisit">
-        <div class="section-container">
-          <h1 class="placeToVisit__title">
-            <span class="placeToVisit__span">Places to Visit</span> on
+      <section class="place-to-visit">
+        <div class="place-to-visit__container">
+          <h1 class="place-to-visit__title">
+            <span class="place-to-visit__span">Places to Visit</span> on
             Valentine's Day in Charleston
           </h1>
+          <p class="place-top-visit__description"></p>
+          <p class="place-to-visit__display-type">displayType
+            <button type="button" class="place-to-visit__btn-type-column">column</button>
+            <button type="button" class="place-to-visit__btn-type-grid">grid</button>
+          </p>
+           
           <div class="heart-container">
             <div class="heart"></div>
             <div class="heart"></div>
@@ -33,17 +39,24 @@
             <div class="heart"></div>
           </div>
 
-          <template id="card__template">
+          <template id="card-template-horizontal">
             <li class="card">
               <div class="card__content">
                 <h2 class="card__title"></h2>
-                <p class="card__subtitle"></p>
-                <!-- <p class="card__description"></p> -->
+                <p class="card__description"></p>
                 <button type="button" class="card__button">More</button>
               </div>
-              <div class="card__container">
                 <img src="" alt="" class="card__image" />
+            </li>
+          </template>
+          <template id="card-template-verticle">
+            <li class="card">
+              <div class="card__content">
+                <h2 class="card__title"></h2>
+                <p class="card__description"></p>
+                <button type="button" class="card__button">More</button>
               </div>
+                <img src="" alt="" class="card__image" />
             </li>
           </template>
 
