@@ -11,14 +11,77 @@
     <meta name="keywords" content="Lover's Slow Jamz" />
     <title>Lover's Slow Jamz</title>
   </head>
-  <body>
+  <body class="page">
     <!-- Standly -->
     <header class="header"></header>
     <main>
       <!-- Anthony-->
       <section class="restaurantRecommentdation"></section>
       <!-- Jmik -->
-      <section class="placeToVisit"></section>
+      <section class="place-to-visit">
+        <div class="place-to-visit__container">
+          <h1 class="place-to-visit__title">
+            <span class="place-to-visit__span">Places to Visit</span> on
+            Valentine's Day in Charleston
+          </h1>
+          <p class="place-top-visit__description"></p>
+          <p class="place-to-visit__display-type">display Type:
+            <button type="button" class="place-to-visit__btn-type-horizontal">column</button>
+            <button type="button" class="place-to-visit__btn-type-verticle">grid</button>
+          </p>
+           
+          <div class="heart-container">
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+          </div>
+          <!-- Horizontal -->
+          <template id="card-template-horizontal">
+            <li class="card">
+              <div class="card__content">
+                <h2 class="card__title"></h2>
+                <p class="card__description"></p>
+                <button type="button" class="card__button">More</button>
+              </div>
+                <img src="" alt="" class="card__image" />
+            </li>
+          </template>
+          <!--Verticle card element  -->
+          <template id="card-template-verticle">
+            <li class="card-verticle">
+              <div class="card-verticle__content">
+                <img src="" alt="" class="card__image" />
+                <h2 class="card__verticle-title"></h2>
+                <p class="card__verticle-description"></p>
+                <button type="button" class="card__button">More</button>
+              </div>
+            </li>
+          </template>
+
+          <ul class="card__list"></ul>
+        </div>
+        <!-- Preview image modal -->
+        <div class="popup popup__preview-image">
+          <div class="popup__content">
+            <button type="button" class="popup__close">Close</button>
+            <img src="" alt="" class="popup__image">
+            <p class="popup__caption"></p>
+          </div>
+        </div>
+        <!-- More images and more info-->
+        <div class="popup popup__images-info">
+          <div class="popup__content">
+            <button type="button" class="popup__close">Close</button>
+            <p class="popup__info">
+              <button type="button" class="popup__images">More Images</button>
+              <button type="button" class="popup__info">More Info</button>
+            </p>
+          </div>
+        </div>
+      </section>
       <!-- JJ -->
       <footer class="footer"></footer>
     </main>

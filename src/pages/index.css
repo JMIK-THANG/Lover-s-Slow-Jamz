@@ -1,4 +1,7 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
-
-/* add block like this: @import url(../blocks/page.css); */
+@import url(../blocks/placeToVisit.css); 
+@import url(../blocks/page.css);
+@import url(../blocks/modal.css); 
+@import url(../blocks/vertilceCard.css)
+ /* add block like this: @import url(../blocks/page.css); */
