@@ -78,3 +78,18 @@
 .restaurant-card_button:hover {
   box-shadow: 0 0 15px pink;
 }
+
+@media screen and (max-width: 425px) {
+  .restaurant-card {
+    padding: 20px;
+  }
+
+  .restaurant-card_buttons {
+    gap: 16px;
+  }
+
+  .restaurant-card_button {
+    width: 100px;
+    font-size: 12px;
+  }
+}

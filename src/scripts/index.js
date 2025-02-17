@@ -9,6 +9,8 @@ import {
   restaurantCardImageSelector,
   restaurantsLeftArrowSelector,
   restaurantsRightArrowSelector,
+  restaurantsVisitSelector,
+  restaurantsWebsiteSelector,
 } from "../utils/constants.js";
 
 const restaurantCardTemplate = document.querySelector(restrauntCardSelector);
@@ -30,13 +32,18 @@ function renderRestaurantCard(cardData, container) {
   cardImage.alt = cardData.name;
   cardImage.src = cardData.imageURL;
 
+  const cardVisit = cardElement.querySelector(restaurantsVisitSelector);
+  cardVisit.href = cardData.googleMaps;
+
+  const cardWebsite = cardElement.querySelector(restaurantsWebsiteSelector);
+  cardWebsite.href = cardData.website;
+
   container.append(cardElement);
 
   return cardElement;
 }
 
 function viewRestaurantCard(element) {
-  console.log(element);
   element.scrollIntoView({
     behavior: "smooth",
     block: "center",
@@ -55,8 +62,6 @@ navigator.geolocation.getCurrentPosition((position) => {
   restrauntCards = restaurants.map((restaurant) => {
     return renderRestaurantCard(restaurant, restaurantsReel);
   });
-
-  console.log(restrauntCards);
 
   let currentRestaurantIndex = 0;
 
