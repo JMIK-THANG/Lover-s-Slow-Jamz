@@ -10,3 +10,6 @@
 @import url(../blocks/verticle.css);
 @import url(../blocks/place-to-visit-footer.css);
 @import url(../blocks/card.css);
+@import url(../blocks/footer.css);
+
+/* add block like this: @import url(../blocks/page.css); */

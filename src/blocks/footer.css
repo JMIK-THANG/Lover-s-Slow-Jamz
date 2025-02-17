@@ -1,0 +1,33 @@
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+  padding: 7px 29px 47px 40px;
+  background: linear-gradient(135deg, #ff758c, #f17eb3, #ffb199);
+  background-attachment: fixed;
+  color: white;
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer__nav {
+  list-style: none;
+  padding: 0;
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer__nav {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__social-links {
+  color: white;
+  margin: 0 5px;
+  text-decoration: none;
+}
