@@ -11,12 +11,8 @@
     opacity: 0;
   }
 }
-.place-to-visit-container {
+.place-to-visit__container {
   background: #f6bbcf;
-  /* display: flex; */
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
   position: relative;
   padding: 40px 20px;
@@ -50,7 +46,7 @@
   margin: 0;
 }
 .place-to-visit__display-type{ 
-      margin-left:5%; 
+      margin-left:10%; 
 }
 .card__image {
   width: 500px;
