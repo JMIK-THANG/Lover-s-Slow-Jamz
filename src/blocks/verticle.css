@@ -1,16 +1,15 @@
-
 .card-list {
   display: flex;
-  flex-wrap: wrap; 
-  gap: 20px; 
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: flex-start;
   padding: 10px;
 }
 
 .card-vertical {
-  width: 200px; 
-  border: 1px solid #ddd; 
-  border-radius: 8px; 
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #fff;
