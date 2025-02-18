@@ -81,6 +81,10 @@
 }
 
 .restaurants_arrow {
+  background: url(../images/Arrow.svg);
+  background-size: contain;
+  border: none;
+
   position: absolute;
   top: 50%;
   z-index: 1;
@@ -131,7 +135,6 @@
 @media screen and (max-width: 768px) {
   .restaurants {
     flex-direction: column;
-    
   }
 }
 
@@ -154,5 +157,4 @@
     min-width: 260px;
     max-width: 260px;
   }
-  
 }

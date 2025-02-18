@@ -51,7 +51,7 @@ function viewRestaurantCard(element) {
   });
 }
 
-navigator.geolocation.getCurrentPosition((position) => {
+function loadRestraunts(position) {
   const restaurants = getSortedArrayByGeoDistance(
     restaurantsData.restaurants,
     position.coords
@@ -84,6 +84,10 @@ navigator.geolocation.getCurrentPosition((position) => {
 
   const element = restrauntCards[currentRestaurantIndex];
   viewRestaurantCard(element);
+}
+
+navigator.geolocation.getCurrentPosition(loadRestraunts, () => {
+  loadRestraunts({ coords: { latitude: 0, longitude: 0 } });
 });
 
 const cardList = document.querySelector(".card__list");
