@@ -116,20 +116,11 @@ const renderCard = (cardData, cardContainer) => {
 
 const openModal = (modal) => {
   modal.classList.add("popup_is-opened");
-  modal.addEventListener("keyup", handleEscape);
 };
 
 const closeModal = (modal) => {
   modal.classList.remove("popup_is-opened");
-  modal.removeEventListener("keyup", handleEscape);
 };
-
-function handleEscape(e) {
-  if (e.key === "Escape") {
-    const closeEscape = document.querySelector(".popup_is-opened");
-    closeModal(closeEscape);
-  }
-}
 
 const horizontalCardElement = (data) => {
   const cardElement = cardTemplate.cloneNode(true);
