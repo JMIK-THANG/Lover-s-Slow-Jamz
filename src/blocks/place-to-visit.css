@@ -26,6 +26,8 @@
   font-size: 35px;
   font-weight: 600;
   padding: 30px 0;
+  font-family: Roboto, Arial, "Helvetica Neue", Lato;
+
 }
 .place-to-visit__span {
   display: block;
