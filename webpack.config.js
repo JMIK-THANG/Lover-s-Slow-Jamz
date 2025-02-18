@@ -10,14 +10,13 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js",
-    publicPath: "/Lover-s-Slow-Jamz/",
+    publicPath: process.env.NODE_ENV === 'production' ? "/Lover-s-Slow-Jamz": "",
   },
-
   mode: "development",
   devtool: "inline-source-map",
   stats: "errors-only",
   devServer: {
-    static: path.resolve(__dirname, "./src"),
+    static: path.resolve(__dirname, "./dist"),
     compress: true,
     port: 8080,
     open: true,
