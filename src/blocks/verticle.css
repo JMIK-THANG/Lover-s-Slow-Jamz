@@ -1,11 +1,11 @@
-.card-list {
+.card__list {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 10px;
+  list-style: none;
 }
-
 .card-vertical {
   width: 200px;
   border: 1px solid #ddd;
@@ -22,7 +22,7 @@
   text-align: center;
 }
 
-.card__image {
+.card-verticle__image {
   width: 100%;
   height: auto;
   border-radius: 4px;
