@@ -2,9 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  min-width:320px; 
-  background:linear-gradient(135deg, #ff758c, #ff7eb3, #fb199f); 
-  color: white; 
-  overflow-x:hidden; 
+  min-width: 320px;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3, #fb199f);
+  color: white;
+  overflow-x: hidden;
 }
 
+@media screend and (max-width: 500px) {
+  .page {
+    overflow-x: hidden;
+  }
+}

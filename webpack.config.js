@@ -10,7 +10,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js",
-    publicPath: "/Lover-s-Slow-Jamz/",
+    publicPath: "/",
   },
 
   mode: "development",
