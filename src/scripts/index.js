@@ -146,7 +146,7 @@ const verticleCardElement = (data) => {
   const verticleCardDescription = cardElement.querySelector(
     ".card__verticle-description"
   );
-  const verticleCardImage = cardElement.querySelector(".card__image");
+  const verticleCardImage = cardElement.querySelector(".card-verticle__image");
 
   verticleCardDescription.textContent = data.description;
   verticleCardTitle.textContent = data.title;
