@@ -25,11 +25,6 @@ _Technologies Used_
 * Webpack DevServer – Local development and hot module replacement.
 
 
-To open website locally type "npm run dev" into the terminal.
-
-You may have to run "npm i" first to install necessary packages.
-
-Upon finishing the project, attempt to run "npm run build" and "npm run deploy".
-
+To open website https://jmik-thang.github.io/Lover-s-Slow-Jamz/
 *********
 
