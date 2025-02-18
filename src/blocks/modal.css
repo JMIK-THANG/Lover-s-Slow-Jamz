@@ -26,6 +26,7 @@
   background-size: cover;
   border-radius: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .popup_is-opened {
@@ -63,18 +64,17 @@
 }
 @media screen and (max-width: 650px) {
   .popup__content {
-    max-width: 90vw;
-    max-height: 70vh;
-    padding: 10px;
-    margin: 0 15px;
+    max-width: 75vw;
+    max-height: 75vh;
+  }
+  .popup__image {
+    max-width: 75vw;
   }
 }
 
 @media screen and (max-width: 500px) {
   .popup__content {
-    max-width: 95vw;
-    max-height: 60vh;
-    padding: 10px;
-    margin: 0 14px;
+    max-width: 75vw;
+    max-height: 75vh;
   }
 }
